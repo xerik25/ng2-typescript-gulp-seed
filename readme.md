@@ -1,7 +1,5 @@
-# Phillips 66 LED Calculator
+#  ng2 seed project
 
-The Phillips 66 LED Calculator is a SPA written for Phillips 66 franchise owners to make educated decisions about
-upgrading their light fixtures to LED's.
 
 ## Stack
 - Angular2
@@ -11,7 +9,7 @@ upgrading their light fixtures to LED's.
 
 ## Usage
 1. Install [NVM](https://github.com/creationix/nvm)
-1. Clone this repo `https://stash.vmlapps.com/scm/vmlnaphil/led_calculator.git`
+1. Clone this repo `git@github.com:xerik25/ng2-typescript-gulp-seed.git`
 1. `npm install`
 
 ## Commands
