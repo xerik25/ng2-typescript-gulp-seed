@@ -1,0 +1,109 @@
+/**
+ * @functions.scss
+ * utility classes
+ */
+
+// Floats
+// -------------------------
+
+.clearfix               { @include clearfix; }
+.center-block           { @include center-block; }
+.pull-right             { float: right !important; }
+.pull-left              { float: left !important; }
+
+// Toggling content
+// -------------------------
+
+.hidden                 { display: none !important; }
+.show                   { display: block !important; }
+
+// Alignment & Emphasis
+// -------------------------------------------------------
+
+// Alignment
+.text-left              { text-align: left; }
+.text-right             { text-align: right; }
+.text-center            { text-align: center; }
+
+// Transformation
+.text-lowercase         { text-transform: lowercase; }
+.text-uppercase         { text-transform: uppercase; }
+.text-capitalize        { text-transform: capitalize; }
+
+// Paddings
+.padding-none {
+    padding: 0 !important;
+}
+
+.padding-none--x {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.padding-none--y {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.padding-none--mobile {
+    padding: 0 !important;
+
+    @include breakpoint(sm) {
+        padding: inherit;
+    }
+}
+
+.padding-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @include breakpoint(sm) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+// Margin
+.margin-none {
+    margin: 0;
+}
+
+// Columns
+.col-centered {
+    margin: 0 auto;
+}
+
+//Rows
+.row-center {
+    -ms-flex-pack: center;
+    flex-pack: center;
+    justify-content: center;
+}
+
+.row-mb1 {
+    margin-bottom: 1em;
+}
+
+.row-mb2 {
+    margin-bottom: 2em;
+}
+
+.row-mt1 {
+    margin-top: 1em;
+}
+
+.row-mt2 {
+    margin-top: 2em;
+}
+
+.row-mt3 {
+    margin-top: 3em;
+}
+
+.row-mt4 {
+    margin-top: 4em;
+}
+
+.row-mt5 {
+    margin-top: 5em;
+}

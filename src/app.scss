@@ -1,0 +1,77 @@
+// Core variables, mixins, and functions
+@import './globals/scss/behaviors';
+
+// Core CSS
+@import './globals/scss/typography';
+@import './globals/scss/design';
+
+// Utilities and construted classes
+@import './globals/scss/utilities';
+@import './globals/scss/constructors';
+
+// Print styles
+@import './globals/scss/print';
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: $mirage;
+    color: $white;
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    position: relative;
+    margin: 0 auto;
+}
+
+.Spinner {
+    width: 40px;
+    height: 40px;
+    margin: 100px auto;
+    background-color: #ffffff;
+
+    border-radius: 100%;
+    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0)
+    }
+    100% {
+        -webkit-transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+@keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    } 100% {
+          -webkit-transform: scale(1.0);
+          transform: scale(1.0);
+          opacity: 0;
+      }
+}
+
+$root: 'components/';
+$pages: 'components/pages/';
+$partials: 'components/partials/';
+
+@import './components/example-component/example';
+
+//Partials
+@import './components/partials/btn/btn';
+
+//Pages
+@import './components/pages/home/home';

@@ -1,0 +1,63 @@
+/**
+ * @variables.scss
+ * global variables
+ */
+
+ // Breakpoints
+ // -------------------------------------------------------
+
+ $break-mobile:            768px;
+ $break-tablet:            992px;
+ $break-desktop:           1200px;
+
+// Colors
+// -------------------------------------------------------
+
+$sunflower:             #E6DA21;
+$pumpkin:               #FE7E1E;
+$cerulean:              #00AFED;
+$coral-reef:            #C7B8A6;
+$timberwolf:            #D4D2CF;
+$jumbo:                 #8B8B8E;
+$outer-space:           #2B3A3F;
+$blaze:                 #F60018;
+$mantis:                #6AC04C;
+$concrete:              #F2F2F2;
+$ebb:                   #EAE7E4;
+$abbey:                 #1A1919;
+$fiord:                 #3A555E;
+$mirage:                #16222C;
+$astronaut:             #182C42;
+$acadia:                #29343D;
+$mercury:               #E1E1E1;
+$white:                 #FFFFFF;
+$black:                 #000000;
+
+// Color blends
+$mirage-border: lighten( saturate( adjust-hue( $mirage, -6deg ), 10 ), 3 );
+
+// Fonts
+// -------------------------------------------------------
+
+// Font Families
+$font-family-base:      'Roboto', Helvetica, Arial, sans-serif;
+
+// Font Sizes
+$font-size-base:        16px !default;
+$font-size-h1:          floor(($font-size-base * 4)) !default; // ~64px
+$font-size-h2:          floor(($font-size-base * 1.625)) !default; // ~26px
+$font-size-h3:          $font-size-base !default; // ~16px
+$font-size-h4:          ceil(($font-size-base * .75)) !default; // ~12px
+$font-size-sm:          floor(($font-size-base / 1.6)) !default; // ~10px
+
+// Font Weights
+$thin:                  100;
+$light:                 300;
+$regular:               400;
+$medium:                500;
+$bold:                  700;
+$ultra-bold:            900;
+
+// Line Heights
+$line-height-base:      1.5625 !default;
+$line-height-computed:  floor(($font-size-base * $line-height-base)) !default; // ~25px

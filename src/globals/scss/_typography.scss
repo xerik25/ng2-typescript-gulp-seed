@@ -1,0 +1,68 @@
+/**
+ * @typography.scss
+ * global type styles
+ */
+
+// Typography
+// --------------------------------------------------
+
+// Headings
+h1,
+.h1 {
+    @include body-font__thin;
+    font-size: floor($font-size-h1 / 2.1);
+    line-height: floor($font-size-h1 / 1.8);
+    margin-top: 0;
+
+    @include breakpoint(sm) {
+        font-size: $font-size-h1;
+        line-height: $font-size-h1 + 11px;
+    }
+}
+
+h2,
+.h2 {
+    @include body-font__light;
+    font-size: $font-size-h2;
+    letter-spacing: 1px;
+}
+
+h3,
+.h3 {
+    @include body-font__medium;
+    font-size: $font-size-h3;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h4,
+.h4 {
+    @include body-font__regular;
+    font-size: $font-size-h4;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+// Body text
+p {
+    @include body-font__regular;
+    font-size: ceil($font-size-base / 1.15);
+    line-height: 20px;
+    margin: 0 0 ($line-height-computed / 2);
+
+    @include breakpoint(sm) {
+        font-size: $font-size-base;
+        line-height: $line-height-computed;
+    }
+}
+
+small,
+.small {
+    font-size: $font-size-sm;
+    letter-spacing: normal;
+    line-height: $font-size-base;
+}
+
+.lead {
+    line-height: 31px !important;
+}

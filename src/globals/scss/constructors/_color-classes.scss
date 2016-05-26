@@ -1,0 +1,34 @@
+/**
+ * @color-classes.scss
+ * global classes for backgrounds and colors
+ * .background-$color | .color-$color
+ */
+
+$colors:
+  "sunflower"             $sunflower,
+  "pumpkin"               $pumpkin,
+  "cerulean"              $cerulean,
+  "coral-reef"            $coral-reef,
+  "timberwolf"            $timberwolf,
+  "jumbo"                 $jumbo,
+  "outer-space"           $outer-space,
+  "blaze"                 $blaze,
+  "mantis"                $mantis,
+  "concrete"              $concrete,
+  "fiord"                 $fiord,
+  "mirage"                $mirage,
+  "ebb"                   $ebb,
+  "abbey"                 $abbey,
+  "astronaut"             $astronaut,
+  "mercury"              $mercury,
+  "white"                 $white,
+  "black"                 $black;
+
+@each $i in $colors{
+  .Background--#{nth($i, 1)} {
+    background: nth($i, 2);
+  }
+  .Color--#{nth($i, 1)} {
+    color:nth($i, 2);
+  }
+}

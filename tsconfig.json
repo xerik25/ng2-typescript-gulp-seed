@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "allowJs": true,
+        "jsx": "preserve",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "module": "commonjs"
+    },
+    "files": [
+        "src/typings/project.d.ts",
+        "src/typings/main.d.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "typings",
+        "public"
+    ]
+}

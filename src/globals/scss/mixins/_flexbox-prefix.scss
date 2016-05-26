@@ -1,0 +1,14 @@
+// Flexbox Prefixing
+// -------------------------------------------------------
+
+@mixin flex() {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flex-x($property, $values) {
+    -ms-flex-#{$property}: $values;
+    -webkit-flex-#{$property}: $values;
+    flex-#{$property}: $values;
+}

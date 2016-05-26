@@ -1,0 +1,23 @@
+/**
+ * @print.scss
+ * print styles
+ */
+
+@media print {
+    // Page break
+    .print-page-break--before {
+        break-before: always;
+        page-break-before: always;
+    }
+
+    .print-page-break--inside {
+        break-inside: always;
+        page-break-inside: always;
+    }
+
+    .print-page-break--after {
+        break-after: always;
+        page-break-after: always;
+    }
+
+}

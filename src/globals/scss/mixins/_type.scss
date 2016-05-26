@@ -1,0 +1,26 @@
+// Type
+// -------------------------------------------------------
+
+@mixin body-font {
+    font-family: $font-family-base;
+}
+
+@mixin body-font__thin {
+    @include body-font;
+    font-weight: $thin;
+}
+
+@mixin body-font__light {
+    @include body-font;
+    font-weight: $light;
+}
+
+@mixin body-font__regular {
+    @include body-font;
+    font-weight: $regular;
+}
+
+@mixin body-font__medium {
+    @include body-font;
+    font-weight: $medium;
+}
