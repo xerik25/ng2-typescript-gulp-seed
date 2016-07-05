@@ -126,7 +126,7 @@ gulp.task('document', function() {
             target: 'ES6',
             mode: 'file',
             theme: 'minimal',
-            name: 'Phillips 66 LED Calculator',
+            name: 'Angular 2 Seed',
             out: './documentation',
             experimentalDecorators: true,
             module: 'commonjs'
