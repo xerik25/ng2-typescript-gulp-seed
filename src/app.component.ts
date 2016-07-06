@@ -2,6 +2,7 @@ import {Component, ApplicationRef} from 'angular2/core';
 import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS, Router} from 'angular2/router';
 import {Storage} from './services/object-storage/object-storage.service';
 import {HomeComponent} from "./components/pages/home/home.component";
+import {ExampleComponent} from "./components/example-component/example.component"; // DELETE for Prod
 
 @Component({
     selector: 'my-app',
@@ -20,6 +21,7 @@ import {HomeComponent} from "./components/pages/home/home.component";
         component: HomeComponent,
         useAsDefault: true,
     },
+    { path: '/demo', name: 'Demo', component: ExampleComponent }, // DELETE for prod
     { path: "/**", redirectTo: ["Home"] }
 ])
 

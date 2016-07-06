@@ -1,2 +1,5 @@
 /public/assets
 /node_modules
+
+# Documentation. This should be generated locally instead of tracked in the repo.
+documentation/index.html
